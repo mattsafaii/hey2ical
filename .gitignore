@@ -1,3 +1,4 @@
 .DS_Store 
+.cache/
 config.yml
 hey2ical_import.log

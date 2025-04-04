@@ -32,5 +32,7 @@
     <string>/path/to/hey2ical/hey2ical_import.log</string>
     <key>RunAtLoad</key>
     <true/>
+    <key>WorkingDirectory</key>
+    <string>/path/to/hey2ical</string>
   </dict>
 </plist>
