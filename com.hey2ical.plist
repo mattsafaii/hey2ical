@@ -1,0 +1,36 @@
+<!-- 
+  Installation Instructions:
+  1. Copy this file to ~/Library/LaunchAgents/com.hey2ical.plist
+  2. Update these paths in the file:
+     - /path/to/.rbenv/versions/3.3.0/bin/ruby (your Ruby path)
+     - /path/to/hey2ical/hey2ical.rb (path to the script)
+     - /path/to/hey2ical/hey2ical_import.log (path to log file)
+  3. Load the service:
+     launchctl load -w ~/Library/LaunchAgents/com.hey2ical.plist
+  4. To unload/stop:
+     launchctl unload ~/Library/LaunchAgents/com.hey2ical.plist
+  
+  Note: The script will run every hour (3600 seconds) and at system startup
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.hey2ical</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/path/to/.rbenv/versions/3.3.0/bin/ruby</string>
+      <string>/path/to/hey2ical/hey2ical.rb</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>StandardOutPath</key>
+    <string>/path/to/hey2ical/hey2ical_import.log</string>
+    <key>StandardErrorPath</key>
+    <string>/path/to/hey2ical/hey2ical_import.log</string>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>

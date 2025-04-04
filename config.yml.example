@@ -1,0 +1,12 @@
+# Example configuration for hey2ical
+# Copy this file to config.yml and update with your values
+
+# Each calendar entry needs:
+# - ics_url: Your HEY calendar feed URL
+# - calendar_name: Name of your local macOS Calendar to sync to
+
+- ics_url: "https://app.hey.com/calendars/YOUR_CALENDAR_TOKEN/feed"
+  calendar_name: "Personal"
+
+- ics_url: "https://app.hey.com/calendars/YOUR_WORK_CALENDAR_TOKEN/feed"
+  calendar_name: "Work" 
