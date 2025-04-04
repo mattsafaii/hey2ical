@@ -31,7 +31,7 @@ export HEY2ICAL_CONFIG="/custom/path/to/config.yml"  # Default: ./config.yml
 
 Run the script:
 ```bash
-./hey2ical-public.rb
+./hey2ical.rb
 ```
 
 For automation, create a launchd plist in `~/Library/LaunchAgents/com.hey2ical.plist`:
