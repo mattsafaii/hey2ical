@@ -62,7 +62,7 @@ For automation, create a launchd plist in `~/Library/LaunchAgents/com.hey2ical.p
 
 Then load it with:
 ```bash
-launchctl load ~/Library/LaunchAgents/com.hey2ical.sync.plist
+launchctl load ~/Library/LaunchAgents/com.hey2ical.plist
 ```
 
 ## How it Works
